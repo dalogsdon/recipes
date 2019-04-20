@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+
+html {
+  font-family: 'Patua one, serif', monospace;
+  font-size: 16px;
+}
+
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+    html {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+body {
+  background-color: #272c35;
+  color: #707b88;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,h2 {
+    margin: 0.5rem 0;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+ol {
+    margin: 0;
+    padding-left: 3rem;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:nth-child(2n) {
+    color: #94a1b1;
+}
+
+li.done {
+    color: #47515d;
+    text-decoration: line-through;
+}
+
+a {
+    color: #5485bf;
+    text-decoration: none;
+}
