@@ -7,7 +7,7 @@ import './App.css';
 function Home() {
     return (
         <ol>
-            {Object.keys(recipes).map(key => <li><Link key={key} to={key}>{recipes[key].title}</Link></li>)}
+            {Object.keys(recipes).map(key => <li key={key}><Link to={key}>{recipes[key].title}</Link></li>)}
         </ol>
     );
 }
