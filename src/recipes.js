@@ -59,8 +59,37 @@ const recipes = {
             'Beat egg whites and pinch of salt until stiff',
             'Gradually beat in 1/4 cup sugar',
             'Beat until whites don\'t slide out of bowl when tilted',
-            'Spreak merengue onto pudding',
+            'Spread merengue onto pudding',
             'Bake until lightly browned (5 min)'
+        ]
+    },
+    'instant-pot-risotto': {
+        title: 'Instant Pot Risotto',
+        link: '',
+        ingredients: [
+            '2 tbsp olive oil',
+            '2 tbsp butter',
+            '1 shallot minced',
+            '1.5 cups arborio rice',
+            '1.5 cups white wine',
+            '2 cups reg sodium chicken broth',
+            '1/2 cup parmesan cheese shredded',
+            '1/4 tsp black pepper'
+        ],
+        steps: [
+            'Saute Instant Pot Setting',
+            'Heat the oil and butter',
+            'Add shallot and saute ~4 mins',
+            'Add rice, saute 1 min, fully coat rice with fat',
+            'Add wine, saute until liquid evaporates ~2 mins',
+            'Stir in broth, make sure rice is submerged',
+            'Secure lid, set pressure release to sealing',
+            'Cancel saute setting',
+            'Cook on manual for 5 mins at high pressure',
+            'Pressure release naturally for 10 mins',
+            'Pressure release venting for remaining steam',
+            'Stir in parmesan and pepper',
+            'Serve immediately'
         ]
     }
 }
