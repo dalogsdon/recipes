@@ -72,7 +72,7 @@ const recipes = {
             '1 shallot minced',
             '1.5 cups arborio rice',
             '1.5 cups white wine',
-            '2 cups reg sodium chicken broth',
+            '2.75 cups reg sodium chicken broth',
             '1/2 cup parmesan cheese shredded',
             '1/4 tsp black pepper'
         ],
