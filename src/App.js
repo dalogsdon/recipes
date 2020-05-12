@@ -1,5 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
+// NOTE: Must use HashRouter due to GitHub Pages limitations
+import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
 import Recipe from './Recipe';
 import recipes from './recipes';
 import './App.css';
@@ -20,7 +23,7 @@ function Home() {
 
 function App() {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/">
             <div>
                 <nav>
                     <Link to="/"><h1 className="nav-title">Drew's Recipes</h1></Link>
