@@ -23,9 +23,9 @@ function Recipe({ match }) {
             <h1>{recipe.title}</h1>
             {recipe.link && <a href={recipe.link} target="_blank" rel="noopener noreferrer">adapted from</a>}
             <h2>Ingredients</h2>
-            <ol>
+            <ul>
                 {recipe.ingredients.map(ing => <TaskLi key={ing}>{ing}</TaskLi>)}
-            </ol>
+            </ul>
             <h2>Steps</h2>
             <ol>
                 {recipe.steps.map(step => <TaskLi key={step}>{step}</TaskLi>)}

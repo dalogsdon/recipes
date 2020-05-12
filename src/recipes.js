@@ -91,6 +91,27 @@ const recipes = {
             'Stir in parmesan and pepper',
             'Serve immediately'
         ]
+    },
+    'fruit-slush': {
+        title: 'Fruit Slush',
+        link: '',
+        ingredients: [
+            '1 can frozen orange juice concentrate',
+            '1 can frozen lemonade concentrate',
+            '4 cups sugar',
+            '8 cups warm water',
+            '1 can pineapple (crushed or tidbits)',
+            '1 can mandarin oranges',
+            '3 bananas (sliced)',
+            '1 jar maraschino cherries'
+        ],
+        steps: [
+            'Dissolve sugar in the warm water',
+            'Add orange and lemonade concentrates',
+            'Add all fruit',
+            'Stir and put in freezer',
+            'Stir again after it starts to freeze to mix well'
+        ]
     }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Recipe from './Recipe';
 import recipes from './recipes';
 import './App.css';
@@ -7,7 +7,13 @@ import './App.css';
 function Home() {
     return (
         <ol>
-            {Object.keys(recipes).map(key => <li key={key}><Link to={key}>{recipes[key].title}</Link></li>)}
+            {
+                Object.keys(recipes).sort().map(key => 
+                    <li key={key}>
+                        <Link to={key}>{recipes[key].title}</Link>
+                    </li>
+                )
+            }
         </ol>
     );
 }
