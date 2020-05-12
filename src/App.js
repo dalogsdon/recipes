@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Recipe from './Recipe';
 import recipes from './recipes';
 import './App.css';
@@ -10,7 +10,7 @@ function Home() {
             {
                 Object.keys(recipes).sort().map(key => 
                     <li key={key}>
-                        <Link to={`/recipes/${key}`}>{recipes[key].title}</Link>
+                        <Link to={`/${key}`}>{recipes[key].title}</Link>
                     </li>
                 )
             }
@@ -20,14 +20,16 @@ function Home() {
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div>
                 <nav>
-                    <Link to="/recipes"><h1 className="nav-title">Drew's Recipes</h1></Link>
+                    <Link to="/"><h1 className="nav-title">Drew's Recipes</h1></Link>
                 </nav>
 
-                <Route path="/recipes" exact component={Home} />
-                <Route path="/recipes/:recipe" component={Recipe} />
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/:recipe" component={Recipe} />
+                </Switch>
             </div>
         </Router>
     );

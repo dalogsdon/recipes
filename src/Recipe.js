@@ -16,7 +16,11 @@ function Recipe({ match }) {
     const recipeName = match.params.recipe;
     const recipe = recipes[recipeName];
     if (!recipe) {
-        return `No recipe found for ${recipeName}`;
+        return (
+            <div className="recipe">
+                No recipe found for "{recipeName}"
+            </div>  
+        )
     }
     return (
         <div className="recipe">
