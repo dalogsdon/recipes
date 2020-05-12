@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // NOTE: Must use HashRouter due to GitHub Pages limitations
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
@@ -8,6 +8,10 @@ import recipes from './recipes';
 import './App.css';
 
 function Home() {
+    useEffect(() => {
+        document.title = 'Recipes';
+    }, []);
+
     return (
         <ol>
             {

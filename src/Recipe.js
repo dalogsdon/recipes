@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import recipes from './recipes';
 import './Recipe.css';
 
@@ -15,6 +15,11 @@ function TaskLi({ children }) {
 function Recipe({ match }) {
     const recipeName = match.params.recipe;
     const recipe = recipes[recipeName];
+
+    useEffect(() => {
+        document.title = `${recipe.title} Recipe`;
+    }, []);
+
     if (!recipe) {
         return (
             <div className="recipe">
