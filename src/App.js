@@ -10,7 +10,7 @@ function Home() {
             {
                 Object.keys(recipes).sort().map(key => 
                     <li key={key}>
-                        <Link to={key}>{recipes[key].title}</Link>
+                        <Link to={`/recipes/${key}`}>{recipes[key].title}</Link>
                     </li>
                 )
             }
@@ -23,11 +23,11 @@ function App() {
         <Router>
             <div>
                 <nav>
-                    <Link to="/"><h1 className="nav-title">Drew's Recipes</h1></Link>
+                    <Link to="/recipes"><h1 className="nav-title">Drew's Recipes</h1></Link>
                 </nav>
 
-                <Route path="/" exact component={Home} />
-                <Route path="/:recipe" component={Recipe} />
+                <Route path="/recipes" exact component={Home} />
+                <Route path="/recipes/:recipe" component={Recipe} />
             </div>
         </Router>
     );
