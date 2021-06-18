@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+
 import recipes from './recipes';
 import './Recipe.css';
 
@@ -16,10 +18,6 @@ function Recipe({ match }) {
     const recipeName = match.params.recipe;
     const recipe = recipes[recipeName];
 
-    useEffect(() => {
-        document.title = `${recipe.title} Recipe`;
-    }, []);
-
     if (!recipe) {
         return (
             <div className="recipe">
@@ -29,6 +27,9 @@ function Recipe({ match }) {
     }
     return (
         <div className="recipe">
+            <Helmet>
+                <title>{recipe.title} Recipe</title>
+            </Helmet>
             <h1>{recipe.title}</h1>
             {recipe.link && <a href={recipe.link} target="_blank" rel="noopener noreferrer">adapted from</a>}
             <h2>Ingredients</h2>
