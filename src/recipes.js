@@ -113,7 +113,7 @@ const recipes = {
             'Stir again after it starts to freeze to mix well'
         ]
     },
-    'heart mac and cheese': {
+    'hearty-mac-and-cheese': {
         title: 'Hearty Mac & Cheese',
         link: '',
         ingredients: [
