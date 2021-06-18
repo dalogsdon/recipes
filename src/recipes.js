@@ -112,6 +112,33 @@ const recipes = {
             'Stir and put in freezer',
             'Stir again after it starts to freeze to mix well'
         ]
+    },
+    'heart mac and cheese': {
+        title: 'Hearty Mac & Cheese',
+        link: '',
+        ingredients: [
+            '300g pasta',
+            '4 eggs',
+            '6oz shredded cheese',
+            '8 tbsp flour',
+            '8 tbsp (1 stick) butter',
+            '3/4 tbsp (slightly rounded) salt',
+            '1/4 tsp black pepper',
+            '1 quart milk',
+            'Paprika',
+            'Cooked chicken (optional)'
+        ],
+        steps: [
+            'Boil pasta',
+            'Make roux with butter, flour, salt, pepper',
+            'Add milk, whisk until thick',
+            'Add cheese to sauce after removing from heat',
+            'Beat eggs',
+            'Combine pasta, sauce, eggs, and chicken',
+            'Put into greased 13x9 pan',
+            'Sprinkle paprika over top',
+            'Bake at 350 F for 40-50 minutes'
+        ]
     }
 }
 
